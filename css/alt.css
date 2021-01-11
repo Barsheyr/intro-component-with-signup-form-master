@@ -144,6 +144,9 @@ button {
     .second {
         margin-top: -70px;
     }
+    .form-control input{
+    padding: 50px;
+    }
     .attribution {
         margin-top: 50px;
     }
