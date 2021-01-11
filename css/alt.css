@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(images/bg-intro-desktop.png);
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    padding: 20px;
+    margin: auto 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: -30px;
+    margin-right: 50%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/*---second----*/
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.first {
+    padding: 20% 10% 15% 10%;
+    color: white;
+}
+
+p {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+
+/*---second----*/
+
+.form {
+    background-color: white;
+    border-radius: 5px;
+    height: 70vh;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.sec-first {
+    background-color: hsl(248, 32%, 49%);
+    margin-top: 15%;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.form-control {
+    position: relative;
+}
+
+.form-control .xclam {
+    position: absolute;
+    visibility: hidden;
+    top: 20px;
+}
+
+.form-control.error .xclam {
+    visibility: visible;
+}
+
+.form-control input {
+    border-radius: 5px;
+    border: 2px solid hsl(246, 25%, 77%);
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 200px 15px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.form-control.success input {
+    border-color: green;
+}
+
+.form-control.error input {
+    border-color: red;
+}
+
+.form-control small {
+    color: red;
+    margin-left: 47%;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+button {
+    background-color: hsl(154, 59%, 51%);
+    padding: 15px 120px 15px 120px;
+    border: 1px solid hsl(154, 59%, 40%);
+    border-radius: 5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    box-shadow: 0 2px hsl(154, 59%, 40%);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .first {
+        text-align: center;
+        margin-top: -30px;
+    }
+    p {
+        padding: 10px;
+        line-height: 1.3em;
+    }
+    .second {
+        margin-top: -70px;
+    }
+    .attribution {
+        margin-top: 50px;
+    }
+}
